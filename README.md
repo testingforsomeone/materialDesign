@@ -7,25 +7,29 @@ Installation
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
-Either run
+run
 
 ```
-php composer.phar require --prefer-dist irrahub/materaildesign "*"
-```
-
-or add
+composer require irrahub/materaildesign:dev-master
 
 ```
-"irrahub/materaildesign": "*"
-```
-
-to the require section of your `composer.json` file.
-
 
 Usage
 -----
 
-Once the extension is installed, simply use it in your code by  :
+in your layouts/main.php include followin code
 
-```php
-<?= \material\design\AutoloadExample::widget(); ?>```
+
+```
+
+<?php
+
+if (class_exists('material\design\web\MaterialAsset')) {
+    material\design\web\MaterialAsset::register($this);
+}
+?>
+<?php $this->beginPage() ?>
+
+
+```
+
