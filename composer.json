@@ -1,0 +1,25 @@
+{
+    "name": "irrahub/materail-design",
+    "description": "Irrahub",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"],
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "Testing For You",
+            "email": "testingforsomeone.me@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "yiisoft/yii2": "~2.0.0",
+        "yiisoft/yii2-bootstrap": "2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "material\\design\\": ""
+        }
+    }
+}
+
